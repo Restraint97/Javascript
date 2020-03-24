@@ -1,0 +1,79 @@
+.section-main__pic {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change-my-pic 12s infinite;
+}
+
+@keyframes change-my-pic {
+    25% {
+        background-image: url("./img/miya.png");
+    }
+    50% {
+        background-image: url("./img/miya1.png");
+    }
+    75% {
+        background-image: url("./img/miya2.png");
+    }
+    100% {
+        background-image: url("./img/miya3.png");
+    }
+}
+
+.section-main__pic2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change-baki 14s infinite;
+}
+
+@keyframes change-baki {
+    0% {
+        background-image: url("./img/fight.png");
+    }
+    25% {
+        background-image: url("./img/fight1.png");
+    }
+    50% {
+        background-image: url("./img/fight2.png");
+    }
+    75% {
+        background-image: url("./img/fight3.png");
+    }
+    100% {
+        background-image: url("./img/fight4.png");
+    }
+}
+
+.navbar-main {
+    text-align: center;
+    z-index: 1;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem;
+    right: calc(50% - 64px);
+    &__list {
+        list-style-type: none;
+    }
+    &__items {
+        text-decoration: none;
+    }
+    &__links {
+        transition: 1s;
+        color: black;
+    }
+}
+
+.navbar-main__links:hover {
+    text-decoration: none;
+    color: firebrick;
+    font-size: 3rem;
+}
